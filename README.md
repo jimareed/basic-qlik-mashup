@@ -7,5 +7,6 @@ Follow instructions from URL above.
 
 ## get started
 ```
+   npm install
    npm run start
 ```
