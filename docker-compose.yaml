@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  mashup:
+    image: basic-qlik-mashup-image
+    container_name: basic-qlik-mashup
+    environment:
+      - MASHUP_URL=https://--insert here--.us.qlikcloud.com
+      - MASHUP_WEBINTID=-- insert here -- 
+      - MASHUP_APPID=-- insert here --
+      - MASHUP_ID=-- insert here --
+    ports:
+      - "1234:1234"
+    networks:
+      - default
+
+networks:
+    default:
