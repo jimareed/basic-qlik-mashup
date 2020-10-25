@@ -1,12 +1,26 @@
-# qlik-hello-saas
+# basic-qlik-mashup
 
-Build a Qlik Sense SaaS  mashup using the tutorial at https://qlik.dev/tutorials/build-a-simple-mashup-using-nebulajs. 
+Wraps the Qlik mashup tutorial at https://qlik.dev/tutorials/build-a-simple-mashup-using-nebulajs in a docker container to simplify deployment.
 
 ## setup
-Follow instructions from URL above.
+Setup your tenant using the instructions from the tutorial above, setup a web integration, upload an app and determine the required parameters:
+- tenant url
+- web integration id
+- app id
+- chart id
 
-## get started
+Download this repo and run:
 ```
-   npm install
-   npm run start
+npm install
+```
+
+## run
+Set the parameters above as environment variables and then run the app:
+```
+export MASHUP_URL=https:// -- insert here -- .us.qlikcloud.com
+export MASHUP_WEBINTID= -- insert here -- 
+export MASHUP_APPID= -- insert here --
+export MASHUP_ID= -- insert here --
+
+npm run start
 ```
