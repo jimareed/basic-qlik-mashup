@@ -10,7 +10,7 @@ Setup your tenant using the instructions from the tutorial above, setup a web in
 - chart id
 
 ## build and run
-Download repo and update docker-compose.yaml to set the parametners above (as environment variables):
+Download repo and update docker-compose.yaml to set the parameters above (as environment variables):
 ```
     environment:
       - MASHUP_URL=https://--insert here--.us.qlikcloud.com
